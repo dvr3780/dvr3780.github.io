@@ -894,6 +894,10 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 	padding-top: 86px;
   }
   
+  .content #page1 {
+    padding: 144px 0px 0px 75px;
+  }
+  
   .p2 .page .projects-wrapper {
     margin: 188px auto;
   }
