@@ -884,9 +884,25 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
+  
+  .content {
+	  padding-left: 0;
+  }
+  
+  .content .page.fullscreen {
+	position: fixed;
+	padding-top: 86px;
+  }
+  
+  .p2 .page .projects-wrapper {
+    margin: 188px auto;
+  }
+  
+  
   .modal-content {
     width: 100%;
   }
+  
 }
 
 .highlight1{
