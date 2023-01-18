@@ -897,7 +897,9 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   .p2 .page .projects-wrapper {
     margin: 188px auto;
   }
-  
+  .exp-details-sm{
+	  padding-left: 75px;
+  }
   
   .modal-content {
     width: 100%;
