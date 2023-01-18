@@ -29,6 +29,45 @@
 				
 				<div class="page" id="page2">
 					
+					<div class="projects-wrapper row">
+						<div class="col-6">
+						<img id="projectImg" src="img/stockDashboardNodeJS.png" alt="NodeJs/MongoDB Stock Dashboard" style="width:100%;max-width:300px">
+
+								<!-- The Modal -->
+								<div id="projectModal" class="modal">
+								  <span class="close">&times;</span>
+								  <img class="modal-content" id="img01">
+								  <div id="caption"></div>
+								</div>
+								<div class="tech-features">
+									<ul>
+										<li>
+											Twitter bootstrap
+										</li>
+										<li>
+											NodeJS
+										</li>
+										<li>
+											custom built stock api
+										</li>
+										<li>
+											ChartJS
+										</li>
+										<li>
+											MongoDB
+										</li>
+										<li>
+											custom built Stock Windows service 
+										</li>
+									</ul>
+								</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+						
+						</div>
+					</div>
 				</div>
 				<div class="page" id ="page3">
 					<div class="container">
@@ -173,7 +212,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="wrapper col-6">
+	<div class="wrapper menu-wrapper col-6">
 		<div class="container">
 		<div class="main">
 			<!-- <div class="nav row row-cols-1 row-cols-sm-1 row-cols-md-1">
@@ -406,6 +445,32 @@ $(document).ready(function(){
 		
 	}); */
 });
+
+// Get the modal
+var modal = document.getElementById("projectModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("projectImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+  $('.nav-wrapper').css("display", "none");
+  $('.menu-wrapper').css("display", "none");
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+
+span.onclick = function() { 
+  modal.style.display = "none";
+  $('.nav-wrapper').css("display", "block");
+  $('.menu-wrapper').css("display", "block");
+}
 
 </script>
 </html>
