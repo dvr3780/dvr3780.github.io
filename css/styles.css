@@ -798,13 +798,15 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 	animation-name:none!important;
 }
 
-#projectImg {
+#project1Img, #project2Img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#projectImg:hover {opacity: 0.7;}
+#project1Img:hover, #project2Img:hover {
+	opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
@@ -861,7 +863,7 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 }
 
 /* The Close Button */
-.close {
+.close1, .close2 {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -871,8 +873,10 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.close1:hover,
+.close2:hover,
+.close1:focus, 
+.close2:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;

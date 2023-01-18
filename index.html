@@ -31,13 +31,13 @@
 					
 					<div class="projects-wrapper row">
 						<div class="col-6">
-						<img id="projectImg" src="img/stockdashboardNodeJS.png" alt="NodeJs/MongoDB Stock Dashboard" style="width:100%;max-width:300px">
+							<img id="project1Img" class="project-image" data-id="1" src="img/stockdashboardNodeJS.png" alt="NodeJs/MongoDB Stock Dashboard" style="width:100%;max-width:300px">
 
 								<!-- The Modal -->
-								<div id="projectModal" class="modal">
-								  <span class="close">&times;</span>
-								  <img class="modal-content" id="img01">
-								  <div id="caption"></div>
+								<div id="project1Modal" class="modal">
+								  <span class="close1">&times;</span>
+								  <img class="modal-content" id="img01" />
+								  <div id="caption1"></div>
 								</div>
 								<div class="tech-features">
 									<ul>
@@ -58,6 +58,32 @@
 										</li>
 										<li>
 											custom built Stock Windows service 
+										</li>
+									</ul>
+								</div>
+						</div>
+						<div class="col-6">
+							<img id="project2Img" class="project-image" data-id="2"  src="img/monthly-budget.png" alt="Excel Budget Dashboard" style="width:100%;max-width:300px">
+
+								<!-- The Modal -->
+								<div id="project2Modal" class="modal">
+								  <span class="close2">&times;</span>
+								  <img class="modal-content" id="img02" />
+								  <div id="caption2"></div>
+								</div>
+								<div class="tech-features">
+									<ul>
+										<li>
+											Excel
+										</li>
+										<li>
+											Excel Formulas - Vlookup, Sumif, Countif, etc...
+										</li>
+										<li>
+											Graphs, Visual Layout Design
+										</li>
+										<li>
+											ActiveX Form Input / Dropdowns
 										</li>
 									</ul>
 								</div>
@@ -212,7 +238,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="wrapper menu-wrapper col-6">
+	<div class="wrapper menu-wrapper col-1">
 		<div class="container">
 		<div class="main">
 			<!-- <div class="nav row row-cols-1 row-cols-sm-1 row-cols-md-1">
@@ -454,30 +480,33 @@ $(document).ready(function(){
 });
 
 // Get the modal
-var modal = document.getElementById("projectModal");
+$('.projects-wrapper .project-image').click(function(){
+	var id = $(this).data("id");
+	var modal = document.getElementById("project" + id + "Modal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("projectImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-  $('.nav-wrapper').css("display", "none");
-  $('.menu-wrapper').css("display", "none");
-}
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("project" + id + "Img");
+	var modalImg = document.getElementById("img0" + id);
+	var captionText = document.getElementById("caption"+id);
+	//img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	  $('.nav-wrapper').css("display", "none");
+	  $('.menu-wrapper').css("display", "none");
+	//}
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close"+id)[0];
 
-// When the user clicks on <span> (x), close the modal
+	// When the user clicks on <span> (x), close the modal
 
-span.onclick = function() { 
-  modal.style.display = "none";
-  $('.nav-wrapper').css("display", "block");
-  $('.menu-wrapper').css("display", "block");
-}
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	  $('.nav-wrapper').css("display", "block");
+	  $('.menu-wrapper').css("display", "block");
+	}
+});
 
 </script>
 </html>
