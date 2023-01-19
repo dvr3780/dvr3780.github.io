@@ -897,6 +897,23 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   .content #page1 {
     padding: 144px 0px 0px 75px;
   }
+  #page1 img {
+	  display: none;
+  }
+  
+  .nav li {
+    margin: 0;
+  }
+  
+  .wrapper {
+	z-index: 200;
+  }
+  
+  .mobile-container {
+	height: 100vh;
+	position: fixed;
+	right: -30px;
+  }
   
   .p2 .page .projects-wrapper {
     margin: 188px auto;
