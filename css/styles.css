@@ -938,8 +938,13 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
     margin: 0;
   }
   
-  .wrapper {
+  .menu-wrapper {
 	z-index: 200;
+	width: 20%;
+  }
+  
+  .menu-wrapper.expanded {
+	  width: 100%;
   }
   
   .mobile-container {
@@ -951,6 +956,19 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   .p2 .page .projects-wrapper {
     margin: 91px auto;
   }
+  
+  .p3 .page .container {
+    margin-top: 100px;
+    margin-left: 0px;
+    padding-left: 69px;
+    padding-right: 28px;
+  }
+  
+  .p3 .name {
+    left: -24px;
+    font-size: 32px;
+  }
+  
   .exp-details-sm{
 	  padding-left: 75px;
   }

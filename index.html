@@ -338,6 +338,7 @@ function toggleHamburger(x){
 function hamburger() {
   var x = $("#hamburger-menu");
   x.toggleClass("open");
+  $(".menu-wrapper").toggleClass("expanded");
 }
 
 document.getElementsByTagName("video")[0].playbackRate = .8;
