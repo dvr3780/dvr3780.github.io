@@ -900,12 +900,25 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   }
   
   .content #page4.page.fullscreen {
-    position: fixed;
     padding-top: 109px !important;
+	overflow: auto;
+	padding: 0 27px 10px 0px;
+  }
+  
+  .content #page2.page.fullscreen, .content #page3.page.fullscreen, .content #page4.page.fullscreen {
+	position: relative;
   }
   
   .content #page1 {
     padding: 144px 0px 0px 75px;
+  }
+  
+  .content #page5 img {
+    position: relative;
+    right: 249px;
+    width: 294%;
+    height: 95%;
+    top: 79px;
   }
   
   #page1 img {
@@ -967,6 +980,10 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   .p3 .name {
     left: -24px;
     font-size: 32px;
+  }
+  
+  .content #page2, .content #page3, .content #page4 {
+    width: 104%;
   }
   
   .exp-details-sm{
