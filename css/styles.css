@@ -909,7 +909,7 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 	padding: 0 27px 10px 0px;
   }
   
-  .content #page2.page.fullscreen, .content #page3.page.fullscreen, .content #page4.page.fullscreen {
+  .content #page1.page.fullscreen,.content #page2.page.fullscreen, .content #page3.page.fullscreen, .content #page4.page.fullscreen {
 	position: relative;
   }
   
