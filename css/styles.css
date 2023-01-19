@@ -885,6 +885,10 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
   
+  body{
+	font-size: 14px;
+  }
+  
   .content {
 	  padding-left: 0;
   }
@@ -919,6 +923,17 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
     width: 294%;
     height: 95%;
     top: 79px;
+  }
+  
+  .content #page1 h2 {
+    font-size: 43px;
+  }
+  
+  .topnav #hamburger-menu.open {
+    display: block;
+    opacity: 1;
+    height: 150px;
+    width: 100%;
   }
   
   #page1 img {
