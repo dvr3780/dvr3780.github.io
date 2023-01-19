@@ -891,15 +891,48 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   
   .content .page.fullscreen {
 	position: fixed;
-	padding-top: 86px;
+	padding-top: 86px !important;
+  }
+  
+  .content #page1.page.fullscreen {
+    position: fixed;
+    padding-top: 190px !important;
+  }
+  
+  .content #page4.page.fullscreen {
+    position: fixed;
+    padding-top: 109px !important;
   }
   
   .content #page1 {
     padding: 144px 0px 0px 75px;
   }
+  
   #page1 img {
 	  display: none;
   }
+  
+  .p4 .content #page4 h2.name {
+    left: -71px;
+    font-size: 40px;
+    top: 308px;
+    color: #5e5454;
+  }
+  
+  .p5 .contact-details .name {
+    left: -98px;
+    top: 77px;
+  }
+  
+  .p5 .contact-details h2 {
+    font-size: 26px;
+   }
+   
+   .p5 .contact-details {
+		top: 202px;
+		left: 63px;
+		position: absolute;
+	}
   
   .nav li {
     margin: 0;
@@ -916,7 +949,7 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   }
   
   .p2 .page .projects-wrapper {
-    margin: 188px auto;
+    margin: 91px auto;
   }
   .exp-details-sm{
 	  padding-left: 75px;
