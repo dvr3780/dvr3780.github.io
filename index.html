@@ -28,8 +28,9 @@
 				</div>
 				
 				<div class="page" id="page2">
-					
-					<div class="projects-wrapper row">
+				    <button class="prev-button" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="next-button" onclick="plusDivs(1)">&#10095;</button>
+					<div class="projects-wrapper row projectSlides">
 						<div class="col-md-6 col-sm-12">
 							<img id="project1Img" class="project-image" data-id="1" src="img/stockdashboardNodeJS.png" alt="NodeJs/MongoDB Stock Dashboard" style="width:100%;max-width:300px">
 
@@ -91,9 +92,37 @@
 								</div>
 						</div>
 					</div>
-					<div class="row">
+					<div class="projects-wrapper row projectSlides">
 						<div class="col-md-6 col-sm-12">
-						
+							<img id="project3Img" class="project-image" data-id="3" src="img/habitTracker.png" alt="VBA Excel Habit Tracker" style="width:100%;max-width:300px">
+
+								<!-- The Modal -->
+								<div id="project3Modal" class="modal">
+								  <span class="close3">&times;</span>
+								  <video controls poster="img/habitTracker.png" width="100%" height="100%" id="project3Video">
+										<source src="./img/HabitTrackerVBA.mp4" type="video/mp4">
+								  </video>
+								  <div id="caption3"></div>
+								</div>
+								<div class="tech-features">
+									<ul>
+										<li>
+											Excel
+										</li>
+										<li>
+											Excel Formulas - Vlookup, Sumif, Countif, etc...
+										</li>
+										<li>
+											Graphs, Conditional Formatting, Visual Layout Design
+										</li>
+										<li>
+											ActiveX Form Input / Dropdowns
+										</li>
+										<li>
+											VBA
+										</li>
+									</ul>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -516,6 +545,24 @@ $('.projects-wrapper .project-image').click(function(){
 	  $('.menu-wrapper').css("display", "block");
 	}
 });
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("projectSlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "flex";  
+}
 
 </script>
 </html>

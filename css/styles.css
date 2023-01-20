@@ -368,6 +368,18 @@ body {
 	display: none;
 }
 
+.content #page2 .prev-button {
+	position: absolute;
+    top: 116px;
+    left: 171px;
+}
+
+.content #page2 .next-button {
+	position: absolute;
+    top: 116px;
+    left: 213px;	
+}
+
 .content #page3 {
 	width: 100%;
     height: 100%;
@@ -798,13 +810,13 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 	animation-name:none!important;
 }
 
-#project1Img, #project2Img {
+#project1Img, #project2Img, #project3Img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#project1Img:hover, #project2Img:hover {
+#project1Img:hover, #project2Img:hover, #project3Img:hover {
 	opacity: 0.7;
 }
 
@@ -863,7 +875,7 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 }
 
 /* The Close Button */
-.close1, .close2 {
+.close1, .close2, .close3 {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -875,8 +887,10 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 
 .close1:hover,
 .close2:hover,
+.close3:hover,
 .close1:focus, 
-.close2:focus {
+.close2:focus,
+.close3:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -1007,6 +1021,18 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   
   .modal-content {
     width: 100%;
+  }
+  
+  .content #page2 .prev-button {
+    position: relative;
+    top: 85px;
+    left: 60px;
+  }
+  
+  .content #page2 .next-button {
+    position: relative;
+    top: 85px;
+    left: 80px;
   }
   
 }
