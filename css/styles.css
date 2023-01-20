@@ -206,7 +206,7 @@ body {
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 	transition: all .5s;
-	z-index: 2;
+	z-index: 20;
 }
 
 .wrapper:hover {
