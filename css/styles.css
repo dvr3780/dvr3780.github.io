@@ -810,13 +810,13 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 	animation-name:none!important;
 }
 
-#project1Img, #project2Img, #project3Img {
+#project1Img, #project2Img, #project3Img, #project4Img, #project5Img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#project1Img:hover, #project2Img:hover, #project3Img:hover {
+#project1Img:hover, #project2Img:hover, #project3Img:hover, #project4Img:hover, #project5Img:hover {
 	opacity: 0.7;
 }
 
@@ -875,7 +875,7 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 }
 
 /* The Close Button */
-.close1, .close2, .close3 {
+.close1, .close2, .close3, .close4, .close5 {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -890,7 +890,9 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
 .close3:hover,
 .close1:focus, 
 .close2:focus,
-.close3:focus {
+.close3:focus,
+.close4:focus,
+.close5:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
