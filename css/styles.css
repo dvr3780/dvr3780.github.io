@@ -1041,17 +1041,43 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   
 }
 
-.video{
-  position: absolute;
-  display: block;
-  background: url(http://www.slatecube.com/images/play-btn.png);
+* {
+  box-sizing: border-box;
+}
+.video {
+  position: relative;
+  display: table;
+  height: 200px;
+  width: 357px;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/b/b8/Messi_vs_Nigeria_2018.jpg) no-repeat;
+  background-size: 100%;
+}
+.video a {
+  display: table-cell;
   height: 100%;
   width: 100%;
-  top: 75px;
-  left: 150px;
-  background-size: 50px 50px;
-  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle;
 }
+.video a .circle {
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 25px;
+  padding: 20px;
+  height: 10px;
+  width: 10px;
+}
+.video a .circle .triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+  transform: translate(-25%, -50%);
+}
+
+
 
 .highlight1{
 	color: #f53f16 !important;
