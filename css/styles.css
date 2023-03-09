@@ -1049,7 +1049,6 @@ body.p2 .zoomIn, body.p3 .zoomIn, body.p4 .zoomIn, body.p5 .zoomIn {
   display: table;
   height: 200px;
   width: 357px;
-  background: url(https://upload.wikimedia.org/wikipedia/commons/b/b8/Messi_vs_Nigeria_2018.jpg) no-repeat;
   background-size: 100%;
 }
 .video a {
